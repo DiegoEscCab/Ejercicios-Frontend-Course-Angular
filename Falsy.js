@@ -16,4 +16,3 @@ Boolean([])  // un array nos da un true
 Boolean({}) // un objeto nos da el valor de true
 Boolean(function() {})  //una funcion tambien es true
 Boolean(true) 
-/// Aqui es donde quiero ver como se modifica un archivo
