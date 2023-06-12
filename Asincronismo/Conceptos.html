@@ -1,0 +1,34 @@
+<h1>¿Que es el asincronismo?</h1>
+<p>JavaScript es single-threaded: No importa realmente que se cuente con multiples procesadores asi fue hecho</p>
+<p>Bloqueante: Una tarea no devuelve el control hasta que la funcion u objetivo de la aplicacion no avanza.</p>
+<p>No Bloqueante: La tarea devuelve de forma inmediata el control de la funcion aun sin haber cumplido el objetivo. Si llegase a completar el objetivo devuelve los datos, sino un error.</p>
+<p>Sincrono: Las tareas se ejecutan de forma secuencial debe de esperar a que se completen para que pueda continuar la cola de tareas por hacer.</p>
+<p>Asincrono: Las tareas pueden ser realizadas mas tarde, lo que hace que la respuesta sea recolectada mas tarde y asi completar una respuesta de varias tareas.</p>
+<p> Utiliza un modelo de Concurrencia basado en eventos mejor conocido como "Event-loop" el cual es un patron de diseno que espera y distribuye eventos o mensajes en un programa.</p>
+
+<h1> Formas de manejar la Asincronia </h1>
+
+<h2>CallBacks</h2>
+<p>Una funcion que pasa como argumento de otra funcion y sera utilizada mas adeltante para otra funcion.</p>
+<h2>Promesas</h2>
+<p>Funcion no-bloqueante y asincrona la cual puede retornar un valor ahora, en el futuro o nunca.</p>
+<h2>Async / Await</h2>
+<p>Estructurar una funcion asincrona sin bloquearla de una manera similar a la funcion sincrona ordinaria haciendo una sintaxis mas amigable y entendible que nos daban problemas los callbacks.</p>
+
+<h4>------------------------------------------------------------------------------</h4>
+<p>JavaScript acaba de convertirse en Multi-Thread con la capacidad de realizar multiples tareas simultaneamente con estas funciones.</p>
+<p>JavaScript es: Asincrono y no bloqueante con un bucle de eventos implementado con un unico hilo para sus interfaces I/O</p>
+
+<h2>Event-loop</h2>
+<p>Es un patron de diseno que espera y distribuye eventos o mensajes en un programa</p>
+<h3>Memory Heap</h3>
+<p>Los objetos son asignados sin un orden en particular que son parte de la memoria</p>
+<h3>Call Stack</h3>
+<p>Apila de Forma organizada las instrucciones de nuestro programa</p>
+<h3>Task Queue</h3>
+<p>Cola de tareas, se maneja la concurrencia, se agregan las tareas que ya estan listas para pasar al Stack. El stack debe de estar vacio.</p>
+<h3>MicroTask Queue</h3>
+<p>Las promesas tienen otra forma de ejecutarses y una prioridad superior</p>
+<h3>Web APIs</h3>
+<p>JavaScript del lado del cliente: setTimeout, XMLHttpRequest, FileReader, DOM. Node fs,https</p>
+<h3></h3>
