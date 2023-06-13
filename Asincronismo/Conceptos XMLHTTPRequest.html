@@ -1,0 +1,57 @@
+<h1>📲 XMLHttpRequest es un objeto de JS que permite hacer peticiones hacia servicios en la nube(URLs o APIs).</h1>
+
+<h2>📪 Existen 5 estados en un llamado XMLHttpRequest:</h2>
+
+<p>
+    0 → Se ha inicializado.<br>
+    1 → Loading (cargando).<br>
+    2 → Se ha cargado.<br>
+    3 → Procesamiento si existe alguna descarga.<br>
+    4 → Completado.
+</p>
+
+<h2>📫 Métodos y propiedades:</h2>
+
+<p>
+   - xmlhttp.open() → Prepara la petición para ser enviada tomando tres parámetros: prótocolo, url, asíncrono (true).<br>
+   - xmlhttp.readyState → Retorna el estado de la petición.<br>
+   - xmlhttp.onreadystatechange → Un eventHandler que es llamado cuando la propiedad readyState cambia.<br>
+   - xmlhttp.status → Retorna el estado de la respuesta de la petición. (200,400,500)<br>
+   - xmlhttp.send() → Envía la petición.<br>
+</p>
+
+<h2>📬 Características del protocolo http:</h2>
+
+<p>Los verbos indican acciones que están asociadas a peticiones y recursos, es decir, sirven para la manipulación de recursos cliente/servidor. Los Verbos http son:</p>
+
+<p>
+    GET → Solicita un recurso.<br>
+    HEAD → Solicita un recurso pero sin retornar información, la estructura de esta petición es igual que get tanto en su headers como estatus. Es útil cuando vamos a utilizar API, para comprobar si lo que vamos a enviar esta correcto y puede ser procesado.<br>
+    POST → Sirve para la creación de recursos en el servidor.<br>
+    PUT → Actualiza por completo un recurso, reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.<br>
+    PATCH → Actualiza parcialmente un recurso.<br>
+    DELETE → Elimina un recurso.<br>
+</p>
+<h2>📭 Los códigos de estados del servidor:</h2>
+
+<p>El código de estado (status codes) sirve para describir el estado de la petición hecha al servidor.</p>
+
+<p>
+    1xx → Indican que la petición fue recibida por el servidor, pero está siendo procesada por el servidor.
+    <br>2xx → Indican que la petición fue recibida, aceptada y procesada correctamente.
+    <br>3xx → Indican que hay que tomar acciones adicionales para completar la solicitud.
+    <br>4xx → Indican errores del lado del cliente que hizo mal una solicitud.
+    <br>5xx → Indican errores del servidor. Suelen aparecer cuando existe un fallo en la ejecución en el servidor.
+
+</p>
+<h2>📧 Los códigos más comunes a la hora de interactuar con una API son:</h2>
+<p>
+    200 → OK → Indica que todo está correcto.
+    <br>201 → Created → Todo está correcto cuando se hizo una solicitud POST, el recurso se creó y se guardó correctamente.
+    <br>204 → No Content → Indica que la solicitud se completó correctamente pero no devolvió información. Este es común cuando se hacen peticiones con el verbo DELETE.
+    <br>400 → Bad Request → Indica que algo está mal en la petición (no encontró algo).
+    <br>401 → Unauthorized → Significa que antes de hacer una solicitud al servidor nos debemos autenticar.
+    <br>403 → Forbidden → Indica que no tenemos acceso a ese recurso aunque se esté autenticado.
+    <br>404 → Not Found → Indica que no existe el recurso que se está intentando acceder.
+    <br>500 → Internal Server Error → Indica que algo falló, es un error que retorna el servidor cuando la solicitud no pudo ser procesada.
+</p>
