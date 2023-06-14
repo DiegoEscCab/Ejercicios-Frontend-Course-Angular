@@ -1,0 +1,20 @@
+<h1>Promesas</h1>
+<p>
+    Las promesas son asíncronas, por lo que el código continuará su ejecución normalmente y luego dirá si la promesa se resolvió o se rechazó. Por lo que varias promesas pueden llegar a entrar en ejecución al mismo tiempo.<br>
+    <br>Las promesas pueden suceder:
+    <br>Ahora
+    <br>En el futuro
+    <br>Nunca
+</p>
+
+<p>
+    Pueden contener uno de los tres estados la promesa:
+    <br><b>Pendiente pending</b>→ Una promesa inicia en este estado: no cumplida, no rechazada:
+    <br>Una promesa inicialmente está pendiente.
+    <br><b>Cumplida fulfilled</b> → Significa que la operación se completó satisfactoriamente, .then(va => …)
+    <br>Cuando llamamos a resolve entonces la promesa pasa a estar resuelta.
+    <br>Cuando una promesa se resuelve entonces se ejecuta la función que pasamos al método .then
+    <br><b>Rechazada rejected</b> → significa que la operación falló, .catch(err => …)
+    <br>Si llamamos a reject pasa a estar rechazada (obtenemos un error que nos va a indicar la razón del rechazo).
+    <br>Si la promesa es rechazada entonces se ejecuta la función que pasamos a .catch
+</p>
